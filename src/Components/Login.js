@@ -1,27 +1,28 @@
-import React, { useState } from "react";
-import "./Login.css";
+// Login.js
+import React from "react";
+import "./Login.css"; // Import your Login-specific styles
 import validateform from "./LoginAuth";
-import { useNavigate } from "react-router-dom"; 
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
+  const [username, setUsername] = React.useState("");
+  const [password, setPassword] = React.useState("");
   const navigate = useNavigate();
 
   const handleLogin = (e) => {
-    e.preventDefault(); 
+    e.preventDefault();
 
     if (username === "admin" && password === "admin") {
-      navigate("/admin");  
+      navigate("/admin");
     } else {
       if (validateform(username, password)) {
-        navigate("/home"); 
+        navigate("/home");
       }
     }
   };
 
   return (
-    <div className="body-login">
+    <div className="login-container"> {/* Use a specific class for the login page container */}
       <div className="login-box">
         <h2>Login</h2>
         <form className="form" onSubmit={handleLogin}>
@@ -42,11 +43,11 @@ const Login = () => {
             onChange={(e) => setPassword(e.target.value)}
             name="password"
           />
-          <br></br>
+          <br />
           <button type="submit" className="logbtn">
             Login
           </button>
-          <p className="foot">Rights Reserved | Hejex Technologies</p>
+          <p className="foot">Rights Reserved | Hejax Technologies</p>
         </form>
       </div>
     </div>

@@ -1,0 +1,62 @@
+body {
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin: 40px 0 30px;
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.canteen {
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 40px;
+  transition: transform 0.3s ease;
+}
+
+.canteen:hover {
+  transform: translateY(-5px);
+}
+
+.canteenname {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #1a73e8;
+  text-decoration: underline;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.canteen h5,
+.canteen h6 {
+  margin: 5px 0;
+  font-weight: 400;
+  color: #444;
+}
+
+.orderbtn {
+  display: block;
+  margin: 20px auto 0;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  background-image: linear-gradient(to right, #36d1dc, #5b86e5);
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.orderbtn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(91, 134, 229, 0.4);
+}
